@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <script src="https://kit.fontawesome.com/d42217aaa0.js" crossorigin="anonymous"></script>
-
+        
         <style>
 
             @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
@@ -124,10 +124,32 @@
             <br>    
 
         <footer>
-            <p> (©) 2025 <span class="footer">dev://<a href="https://thecasual.dev">TheCasualDev</a></span> || <a href="https://raw.githubusercontent.com/TheCasualDev/fcc.ResponsiveWebDesign/refs/heads/main/LICENSE" target="_blank">MIT license</a> || <a href="https://github.com/TheCasualDev/fcc.ResponsiveWebDesign" target="_blank">Source</a> </p>
+            <p> (©) 2024 <span class="footer">dev://<a href="https://thecasual.dev">TheCasualDev</a></span> || <a id="license" href="https://raw.githubusercontent.com/TheCasualDev/fcc.ResponsiveWebDesign/refs/heads/main/LICENSE" target="_blank">MIT license</a> || <a href="https://github.com/TheCasualDev/fcc.ResponsiveWebDesign" target="_blank">Source</a> </p>
         </footer>
         
 
     </body>
+
+    <script>
+
+        const target = document.getElementById('license');
+
+        target.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const floatingWindow = window.open(
+                'https://raw.githubusercontent.com/TheCasualDev/fcc.ResponsiveWebDesign/refs/heads/main/LICENSE',
+                'license',
+                'width=800, height=600, top=100, left=100'
+            );
+
+            if (!floatingWindow) {
+                console.error('Popup Failed!')
+                window.open('https://raw.githubusercontent.com/TheCasualDev/fcc.ResponsiveWebDesign/refs/heads/main/LICENSE', '_blank')
+            }
+
+        });
+
+    </script>
 
 </html>
