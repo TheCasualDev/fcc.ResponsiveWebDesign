@@ -11,6 +11,8 @@ h1, h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
 }
 h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
     font-size: 40px;
 }
 h2 {
@@ -21,6 +23,12 @@ hr {
     height: 2px;
     background-color: brown;
     border-color: brown;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
 }
 
 .menu {
@@ -60,9 +68,19 @@ footer {
     font-size: 14px;
 }
 
+.address {
+    margin-bottom: 5px;
+}
+
 a {
     color: black;
 }
 a:visited {
-    color: gray;
+    color: black;
+}
+a:hover {
+    color: brown;
+}
+a:active {
+    color: brown;
 }
