@@ -9,6 +9,18 @@ h1, h2, p {
 h1, h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
 }
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
 
 .menu {
     width: 80%;
