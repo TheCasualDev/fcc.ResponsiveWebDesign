@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+    <head>
+
+        <title>Survey Form</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        
+        <div class="root">
+
+            <header class="header">
+                <h1 class="title" id="title">The Quick <span class="bold-title">CODING</span> Survey</h1>
+                <p class="description" id="description">Thank you for providing a coverage of your coding practice</p>
+            </header>
+
+            <form action="" method="post" class="survey-form" id="survey-form">
+                
+                <div class="container">
+
+                    <div class="decor"></div>
+
+                    <div class="question">
+                        <label for="name" id="name-label">Name:</label>
+                        <input type="text" name="name" id="name" required placeholder=" John Smith">
+                    </div>
     
-</body>
+                    <div class="question">
+                        <label for="email" id="email-label">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder=" test@example.com">
+                    </div>
+    
+                    <div class="question">
+                        <label for="number" id="number-label">Age: (years)</label>
+                        <input type="number" name="number" id="number" min="13" max="120" required placeholder=" 69">
+                    </div>
+
+                    <hr>
+
+                    <div class="question">
+                        <p>Which IDE do you use the most?</p>
+                        <select name="dropdown" id="dropdown" class="dropdown">
+                            <option disabled="" selected="" value="">(select one)</option>
+                            <option value="vc-code">Visual Studio Code</option>
+                            <option value="intellij">IntelliJ IDEA</option>
+                            <option value="pycharm">PyCharm</option>
+                            <option value="eclipse">Eclipse</option>
+                            <option value="x-code">XCode</option>
+                            <option value="other">Not Listed</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <div class="question">
+                        <p>How long have you been using the selected IDE?</p>
+                        <label for="radio-1" id="radio"><input type="radio" class="inline" name="radio" id="radio-1" value="0"> Just Started</label>
+                        <label for="radio-2" id="radio"><input type="radio" class="inline" name="radio" id="radio-2" value="2"> 1 - 5 Years</label>
+                        <label for="radio-3" id="radio"><input type="radio" class="inline" name="radio" id="radio-3" value="3"> 5+ Years</label>
+                    </div>
+
+                    <hr>
+
+                    <div class="question">
+                        <p>Select the following languages you use often.</p>
+                        <label for="check-1" id="checkbox"><input type="checkbox" class="inline" name="checkbox" id="check-1" value="python"> Python</label>
+                        <label for="check-2" id="checkbox"><input type="checkbox" class="inline" name="checkbox" id="check-2" value="javascript"> JavaScript</label>
+                        <label for="check-3" id="checkbox"><input type="checkbox" class="inline" name="checkbox" id="check-3" value="java"> Java</label>
+                        <label for="check-4" id="checkbox"><input type="checkbox" class="inline" name="checkbox" id="check-4" value="c-sharp"> C#</label>
+                        <label for="check-5" id="checkbox"><input type="checkbox" class="inline" name="checkbox" id="check-5" value="c-p-p"> C++</label>
+                        <label for="check-6" id="checkbox"><input type="checkbox" class="inline" name="checkbox" id="check-6" value="typescript"> TypeScript</label>
+                        <label for="check-7" id="checkbox"><input type="checkbox" class="inline" name="checkbox" id="check-7" value="go"> Go</label>
+                        <label for="check-8" id="checkbox"><input type="checkbox" class="inline" name="checkbox" id="check-8" value="rust"> Rust</label>
+                        <label for="check-9" id="checkbox"><input type="checkbox" class="inline" name="checkbox" id="check-9" value="php"> PHP</label>
+                    </div>
+
+                    <hr>
+
+                    <div class="question">
+                        <label for="text-block">Provide a quick overview of your workflow.</label>
+                        <textarea name="text-block" id="text-block" cols="30" rows="10"></textarea>
+                    </div>
+
+                </div>
+
+                <input type="submit" value="SUBMIT" class="submit" id="submit">
+
+            </form>
+
+        </div>
+
+    </body>
+
 </html>

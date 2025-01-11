@@ -1,0 +1,116 @@
+
+/* Colors from https://www.realtimecolors.com */
+
+@media (prefers-color-scheme: light) {
+    :root {
+      --text: #071022;
+      --background: #eef3fc;
+      --primary: #183172;
+      --secondary: #856ce0;
+      --accent: #652acb;
+    }
+  }
+@media (prefers-color-scheme: dark) {
+    :root {
+      --text: #dce6f8;
+      --background: #030811;
+      --primary: #8da7e7;
+      --secondary: #381f94;
+      --accent: #6e32d5;
+    }
+}
+
+/* code starts here */
+
+body {
+    font-family: "Tahoma", serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+form {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100vw;
+}
+hr {
+    margin: 20px auto;
+    border: 2px dotted var(--accent);
+    width: 95%;
+}
+
+input, textarea, select {
+    width: 100%;
+    min-height: 2.2em;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--background);
+    border: 3px solid var(--accent);
+    color: var(--text);
+}
+select {
+    height: 3em;
+}
+object {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.2rem 0;
+    text-align: left;
+}
+
+.root {
+    text-align: center;
+}
+.container {
+    margin: 20px auto;
+    padding-bottom: 20px;
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 5px solid var(--accent);
+    border-radius: 0.8rem;
+}
+.question {
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.submit {
+    display: block;
+    width: 40%;
+    min-width: 300px;
+    margin: 1em auto;
+    height: 3em;
+    font-size: 1.1rem;
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.decor {
+    width: 100%;
+    height: 35px;
+
+    background-color: var(--accent);
+}
+
+.req {
+    color: #c75757;
+}
+.bold-title {
+  background-color: var(--primary);
+  background-image: linear-gradient(45deg, var(--accent), var(--primary));
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  color: #ffffff00;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
