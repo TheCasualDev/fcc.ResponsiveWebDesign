@@ -18,13 +18,25 @@ body {
 }
 
 .gallery {
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
+    gap: 16px;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .gallery img {
+    border-radius: 10px;
+    object-fit: cover;
     width: 100%;
     max-width: 350px;
     height: 300px;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
 }
