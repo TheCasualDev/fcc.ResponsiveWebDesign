@@ -35,6 +35,10 @@ p {
     margin: 0;
 }
 
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
 .label {
     margin: 20px auto;
     padding: 0 7px;
@@ -61,6 +65,9 @@ p {
 .large, .medium {
     border: 0;
     background-color: black;
+}
+.double-indent {
+    margin-left: 2em;
 }
 
 .bold {
