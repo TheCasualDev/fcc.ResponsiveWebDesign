@@ -21,6 +21,16 @@ p {
     justify-content: space-between;
 }
 
+.calories-info h2 {
+    margin: 0;
+}
+
+.calories-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .label {
     margin: 20px auto;
     padding: 0 7px;
@@ -28,10 +38,27 @@ p {
     border: 2px solid black;
 }
 
-.bold {
-    font-weight: 800;
+.left-container p {
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
 }
+
 .divider {
     border-bottom: 1px solid #888989;
     margin: 2px 0;
+}
+.large {
+    height: 10px;
+}
+.large, .medium {
+    border: 0;
+    background-color: black;
+}
+
+.bold {
+    font-weight: 800;
+}
+.small-text {
+    font-size: 0.85rem;
 }
