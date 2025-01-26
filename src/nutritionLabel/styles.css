@@ -10,13 +10,15 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-h1 {
+header h1 {
     margin: -4px 0;
-    font-weight: 800;
     text-align: center;
+    letter-spacing: 0.15px;
 }
 p {
     margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .label {
@@ -24,4 +26,12 @@ p {
     padding: 0 7px;
     width: 270px;
     border: 2px solid black;
+}
+
+.bold {
+    font-weight: 800;
+}
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
 }
