@@ -21,14 +21,18 @@ p {
     justify-content: space-between;
 }
 
-.calories-info h2 {
-    margin: 0;
-}
-
 .calories-info {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+.calories-info span {
+    margin: -7px -2px;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+.calories-info h2 {
+    margin: 0;
 }
 
 .label {
@@ -51,6 +55,9 @@ p {
 .large {
     height: 10px;
 }
+.medium {
+    height: 5px;
+}
 .large, .medium {
     border: 0;
     background-color: black;
@@ -61,4 +68,7 @@ p {
 }
 .small-text {
     font-size: 0.85rem;
+}
+.right {
+    justify-content: flex-end;
 }
