@@ -22,9 +22,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="">INFO</a></li>
-                    <li><a href="">HTML</a></li>
-                    <li><a href="">CSS</a></li>
+                    <li><a href="#student-info">INFO</a></li>
+                    <li><a href="#html-questions">HTML</a></li>
+                    <li><a href="#css-questions">CSS</a></li>
                 </ul>
             </nav>
 
@@ -34,9 +34,38 @@
 
             <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
 
-                <section></section>
-                <section></section>
-                <section></section>
+                <section role="region" aria-labelledby="student-info">
+                    <h2 id="student-info">Student Info</h2>
+                    <div class="info">
+                        <label for="student-name">Name:</label>
+                        <input type="text" id="student-name" name="student-name">
+                    </div>
+                    <div class="info">
+                        <label for="student-email">Em@il:</label>
+                        <input type="email" id="student-email" name="student-email" placeholder="test@thecasual.dev">
+                    </div>
+                    <div class="info">
+                        <label for="student-date">Birthday:</label>
+                        <input type="date" id="student-date" name="student-date">
+                    </div>
+                </section>
+
+
+                <section role="region" aria-labelledby="html-questions">
+                    <h2 id="html-questions">HTML</h2>
+                    <div class="question-block">
+                        <h3>1 <span class="sr-only"></span></h3>
+                        <fieldset class="question"></fieldset>
+                    </div>
+                    <div class="question-block">
+                        <h3>2 <span class="sr-only"></span></h3>
+                        <fieldset class="question"></fieldset></div>
+                </section>
+
+
+                <section role="region" aria-labelledby="css-questions">
+                    <h2 id="css-questions">CSS</h2>
+                </section>
 
             </form>
 
