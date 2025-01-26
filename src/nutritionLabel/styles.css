@@ -1,7 +1,27 @@
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 16px;
 }
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    margin: -4px 0;
+    font-weight: 800;
+    text-align: center;
+}
+p {
+    margin: 0;
+}
+
+.label {
+    margin: 20px auto;
+    padding: 0 7px;
+    width: 270px;
+    border: 2px solid black;
 }
