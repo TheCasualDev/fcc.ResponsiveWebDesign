@@ -82,3 +82,11 @@ p {
 .right {
     justify-content: flex-end;
 }
+
+
+.note {
+    font-size: 0.6rem;
+    text-indent: -8px;
+    padding: 0 8px;
+    margin: 5px 0;
+}
